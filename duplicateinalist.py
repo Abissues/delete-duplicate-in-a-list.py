@@ -22,6 +22,7 @@ while 1:
         print(a)
         print("the original array len is " + str(original) + " now the len is " + str(len(a)) + " duplicate number = " + str(int(original)-(int(len(a)))))
         break
+        input()
     else:
         print("--------------------------------------------------")
         print("list of duplicate ", s)#print all duplicate list version
@@ -34,3 +35,5 @@ while 1:
             extract+=1
     a.reverse()
     print("\n"+"list without duplicate ",a)#original list without duplicate 
+    
+    

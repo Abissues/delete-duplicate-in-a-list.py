@@ -13,11 +13,14 @@ while maxleaght!=0:
         a.append(x)#add element
     maxleaght-=1
     count+=1
+original=len(a)
 while 1:
     s=[item for item, count in collections.Counter(a).items() if count > 1]#found duplicate 
     if len(s)==0:
+        print("--------------------------------------------------")
         print("compleate list without duplicate done")
         print(a)
+        print("the original array len is " + str(original) + " now the len is " + str(len(a)) + " duplicate number = " + str(int(original)-(int(len(a)))))
         break
     else:
         print("--------------------------------------------------")
